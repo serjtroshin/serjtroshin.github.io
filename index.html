@@ -4,10 +4,23 @@ title: Blog Posts
 ---
 
 <div id="home">
-  <h2><i class="fa fa-bookmark"></i> Blog Posts</h2>
+  <h2><i class="fa fa-bookmark"></i> About me</h2>
+  <p>I am the fist year PhD student at the <a href="https://ltl.science.uva.nl/">Language Technology Lab</a> at the University of Amsterdam supervised by <a href="https://vene.ro/">Vlad Niculae</a>. My research is mainly focused on probabilistic models and constrained generation for text. More broadly, I am interested in learning natural language processing and deep learning for source code.</p>
+  
+  <h2><i class="fa fa-bookmark"></i> News</h2>
   <ul id="blog-posts" class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }} &raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+    <li><span>29 Apr 2022 &raquo;</span>, We presented our <a href="https://openreview.net/forum?id=rd-G1nO-Jbq_">spotlight paper on CodeBPE</a> on subtokenization for source code models at the 
+      <a href="https://nips.cc/Conferences/2021">DL4Code workshop of ICLR 2022</a>
+     (online)!</li>
+    <li><span>22 Aug 2021  &raquo;</span>, We with Nadezhda Chirkova presented our paper
+      <a href="https://arxiv.org/abs/2010.07987">Empirical Study of Transformers for Source Code</a>
+      at <a href="https://2021.naacl.org/">ESEC/FSE 2021</a> (online).
+      Here is our <a href="https://github.com/bayesgroup/code_transformers">code</a></li>
+    <li><span>7 Jun 2021  &raquo;</span>, <a href="https://arxiv.org/abs/2010.12663">A Simple Approach for Handling Out-of-Vocabulary Identifiers in Deep Learning for Source Code</a> paper presented at <a href="https://2021.naacl.org/">NAACL 2021</a> with Nadezhda Chirkova</li>
+</ul>
+
+
+
+
   </ul>
 </div>
