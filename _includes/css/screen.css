@@ -208,7 +208,7 @@ nav h1, nav h2 {
   float: none !important;
   overflow: visible !important;
   white-space: nowrap;      /* keep each link on one line */
-  margin: 0 8px;
+  margin: 0 4px;
   text-decoration: none;
   color: inherit;
   font-weight: 500;
