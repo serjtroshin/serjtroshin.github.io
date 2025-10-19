@@ -1,5 +1,11 @@
 Follow me:
 <div id="stalker">
+  {% if site.data.theme.social.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.data.theme.social.linkedin }}">LinkedIn</a>
+  {% endif %}
+  {% if site.data.theme.social.gscholar %}
+    <a href="https://scholar.google.com/citations?user={{ site.data.theme.social.gscholar }}">Google Scholar</a>
+  {% endif %}
   {% if site.data.theme.social.github %}
     <a href="https://github.com/{{ site.data.theme.social.github }}">GitHub</a>
   {% endif %}
@@ -24,16 +30,10 @@ Follow me:
   {% if site.data.theme.social.tumblr %}
     <a href="https://{{ site.data.theme.social.tumblr }}.tumblr.com">Tumblr</a>
   {% endif %}
-  {% if site.data.theme.social.linkedin %}
-    <a href="https://www.linkedin.com/in/{{ site.data.theme.social.linkedin }}">LinkedIn</a>
-  {% endif %}
   {% if site.data.theme.social.gplus %}
     <a href="https://plus.google.com/{{ site.data.theme.social.gplus }}">Google+</a>
   {% endif %}
   {% if site.data.theme.social.flickr %}
     <a href="https://www.flickr.com/photos/{{ site.data.theme.social.flickr }}">Flickr</a>
-  {% endif %}
-  {% if site.data.theme.social.gscholar %}
-    <a href="https://scholar.google.com/citations?user={{ site.data.theme.social.gscholar }}">Google Scholar</a>
   {% endif %}
 </div>
