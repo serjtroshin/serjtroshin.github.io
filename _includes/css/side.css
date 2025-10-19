@@ -1,3 +1,19 @@
 #logo {
     border-radius: 50%;
 }
+
+#stalker {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#stalker a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+#stalker a:hover {
+  text-decoration: underline;
+  color: #0073e6;
+}
