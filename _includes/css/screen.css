@@ -197,25 +197,28 @@ nav h1, nav h2 {
 
 #stalker {
   display: inline-block;
-  height: 18px;
   margin-left: 5px;
+  height: auto; /* let it adjust naturally */
 }
 
 #stalker a {
-  width: 29px;
-  overflow: hidden;
-  float: left;
-}
-
-#stalker i {
-  font-size: 28px;
-  margin-right: 5px;
+  display: inline-block;
+  margin: 0 8px;
+  text-decoration: none;
+  color: inherit; /* keep same color as surrounding text */
+  font-weight: 500; /* optional: makes it slightly bolder */
 }
 
 #stalker a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: {{ site.data.theme.highlight_color }};
 }
+
+/* Remove icon styling since icons are gone */
+#stalker i {
+  display: none;
+}
+
 
 i.fa-hn {
   font-family: "open sans", sans-serif;
