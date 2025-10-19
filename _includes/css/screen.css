@@ -195,29 +195,38 @@ nav h1, nav h2 {
   border-radius: 50%;
 }
 
-#stalker {
-  display: inline-block;
+/* Container can stay inline with the label */
+#stalker { 
+  display: inline; 
   margin-left: 5px;
-  height: auto; /* let it adjust naturally */
 }
 
+/* Make links inline text, not fixed-width boxes */
 #stalker a {
-  display: inline-block;
+  display: inline !important;
+  width: auto !important;
+  float: none !important;
+  overflow: visible !important;
+  white-space: nowrap;      /* keep each link on one line */
   margin: 0 8px;
   text-decoration: none;
-  color: inherit; /* keep same color as surrounding text */
-  font-weight: 500; /* optional: makes it slightly bolder */
+  color: inherit;
+  font-weight: 500;
 }
 
+/* Optional separators */
+#stalker a + a::before {
+  content: " · ";
+}
+
+/* Hover style */
 #stalker a:hover {
   text-decoration: underline;
   color: {{ site.data.theme.highlight_color }};
 }
 
-/* Remove icon styling since icons are gone */
-#stalker i {
-  display: none;
-}
+/* Kill leftover icon styling (if any markup remains) */
+#stalker i { display: none !important; }
 
 
 i.fa-hn {
