@@ -1,5 +1,8 @@
 Follow me:
 <div id="stalker">
+  {% if site.data.theme.social.email %}
+    <a href="mailto:{{ site.data.theme.social.email }}">Email</a>
+  {% endif %}
   {% if site.data.theme.social.linkedin %}
     <a href="https://www.linkedin.com/in/{{ site.data.theme.social.linkedin }}">LinkedIn</a>
   {% endif %}
